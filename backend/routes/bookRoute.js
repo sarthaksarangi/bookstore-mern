@@ -27,6 +27,20 @@ router.post("/", async (req, res) => {
     }
   });
   
+  // Route for Get All Books from database
+router.get('/', async (req, res) => {
+  try {
+    const books = await Book.find({});
+
+    return res.status(200).json({
+      count: books.length,
+      data: books,
+    });
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).send({ message: error.message });
+  }
+});
   //Now route all the books from the database by its id
   
   router.get("/:id", async (req, res) => {
