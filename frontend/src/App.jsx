@@ -13,7 +13,6 @@ const App = () => {
       <Route path='/books/details/:id' element={<ShowBook/>}/>
       <Route path='/books/edit/:id' element={<EditBook/>} />
       <Route path='/books/delete/:id' element={<DeleteBook/>} />
-
     </Routes>
   )
 }
