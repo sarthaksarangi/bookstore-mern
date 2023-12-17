@@ -9,6 +9,12 @@ import cors from 'cors'
 app.use(express.json());
 
 app.use(cors())
+/*
+ "CORS is a security feature for web browsers. 
+ It's like a gatekeeper that decides if other websites can access the things (like data or services)
+  on your website. It helps prevent unauthorized access from potentially harmful places while allowing good,
+   safe websites to use your stuff."
+*/
 // app.use(cors({
 //     origin:'http://localhost:3000',
 //     methods:['GET','POST','PUT','DELETE'],
