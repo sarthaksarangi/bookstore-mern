@@ -22,7 +22,7 @@ const DeleteBook = () => {
     })
     .catch((e)=>{
       setLoading(false);
-      enqueueSnackbar('Erroe' ,{variant: "error"})
+      enqueueSnackbar('Error' ,{variant: "error"})
       console.log(e);
     })
   }
